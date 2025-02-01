@@ -10,7 +10,7 @@ class RandomData:
         3: "Horchata",
         4: "Limonada",
         5: "Agua",
-        6: "Ninguna",
+        6: "Ninguna de las anteriores",
     }
 
     def __init__(self, region="en_US"):
@@ -21,7 +21,7 @@ class RandomData:
 
     def generate_random_data_with_drink(self):
         bebida = self.drinks_dict[self.fake.random_int(0, 6)]
-        return {"nombre:": self.fake.name(), "bebida": bebida}
+        return {"nombre": self.fake.name(), "bebida": bebida}
 
     def generate_base_on_quantity(self, quantity):
         lst = []
