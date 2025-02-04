@@ -10,5 +10,5 @@ print("Random name: ", randomData.generate_base_on_quantity(3))
 # print("Form submit: ", formSubmit.submit("Juan", "Pepsi"))
 print(
     "Form submit multiple: ",
-    formSubmit.process_multiple_request_with_time(randomData.generate_base_on_quantity(3), 3),
+    formSubmit.process_multiple_request_with_time(randomData.generate_base_on_quantity(20), 3),
 )
